@@ -1,0 +1,6 @@
+---
+- name: Ensure phpldapadmin are installed
+  apt:
+    name: "{{ phpldapadmin_package }}"
+    update_cache: "{{ phpldapadmin_update_cache }}"
+    state: present
