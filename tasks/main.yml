@@ -4,3 +4,11 @@
     name: "{{ phpldapadmin_package }}"
     update_cache: "{{ phpldapadmin_update_cache }}"
     state: present
+
+- name: config_openldap | configuring phpldapadmin
+  template:
+    src: config.php.j2
+    dest: /etc/phpldapadmin/config.php
+    owner: root
+    group: www-data
+    mode: 0640
