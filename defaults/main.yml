@@ -1,3 +1,4 @@
 phpldapadmin_package: phpldapadmin
 phpldapadmin_update_cache: True
 phpldapadmin_hide_php_warnings: True
+phpldapadmin_host_server: 127.0.0.1
